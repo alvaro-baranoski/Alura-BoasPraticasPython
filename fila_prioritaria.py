@@ -1,7 +1,7 @@
 from fila_base import FilaBase
 
 
-class FilaNormal(FilaBase):
+class FilaPrioritaria(FilaBase):
 
     def gera_senha(self) -> None:
         self.senha_atual = f"NM{self.codigo}"
