@@ -1,6 +1,6 @@
-from fila_normal import FilaNormal
+from fila_factory import FilaFactory
 
-fila_teste = FilaNormal()
+fila_teste = FilaFactory.pega_fila("prioritaria")
 fila_teste.atualiza_fila()
 fila_teste.atualiza_fila()
 fila_teste.atualiza_fila()
