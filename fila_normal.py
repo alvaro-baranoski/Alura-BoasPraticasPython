@@ -1,4 +1,4 @@
-class Fila_normal:
+class FilaNormal:
 
     codigo:int = 0
     fila = []

@@ -1,6 +1,6 @@
-from fila_normal import Fila_normal
+from fila_normal import FilaNormal
 
-fila_teste = Fila_normal()
+fila_teste = FilaNormal()
 fila_teste.atualiza_fila()
 fila_teste.atualiza_fila()
 fila_teste.atualiza_fila()
