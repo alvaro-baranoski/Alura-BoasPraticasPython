@@ -1,9 +1,9 @@
 class FilaNormal:
 
-    codigo:int = 0
+    codigo: int = 0
     fila = []
     clientes_atendidos = []
-    senha_atual:str = ""
+    senha_atual: str = ""
 
     def gera_senha(self) -> None:
         self.senha_atual = f"NM{self.codigo}"
@@ -19,7 +19,7 @@ class FilaNormal:
         self.gera_senha()
         self.fila.append(self.senha_atual)
 
-    def chama_cliente(self, caixa:int) -> str:
-        cliente_atual:str = self.fila.pop(0)
+    def chama_cliente(self, caixa: int) -> str:
+        cliente_atual: str = self.fila.pop(0)
         self.clientes_atendidos.append(cliente_atual)
         return(f"Cliente atual: {cliente_atual}, caixa: {caixa}")
