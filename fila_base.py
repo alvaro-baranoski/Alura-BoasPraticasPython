@@ -18,9 +18,10 @@ class FilaBase(metaclass=abc.ABCMeta):
     def gera_senha(self):
         ...
 
-    @abc.abstractmethod
     def atualiza_fila(self):
-        ...
+        self.atualiza_codigo()
+        self.gera_senha()
+        self.fila.append(self.senha_atual)
 
     @abc.abstractmethod
     def chama_cliente(self, caixa: int):
